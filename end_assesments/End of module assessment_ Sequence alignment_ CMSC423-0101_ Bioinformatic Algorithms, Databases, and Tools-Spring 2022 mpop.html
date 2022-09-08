@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://umd.instructure.com/courses/1318188/quizzes/1511891 -->
+<html class="" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="sentry-trace" content="bf7218511aba471d9f0863be0cde1d75-2e09d21b9cb96574-0">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="stylesheet" media="screen" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/fonts-43e9c545fc.css">
+    <script async="" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/analytics.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://instructure-uploads.s3.amazonaws.com/account_120000000081466/attachments/44159818/umd.ico?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&amp;Expires=1937381306&amp;Signature=KhIz7VvLBsAEAINSKbfCqL%2B6hFQ%3D&amp;response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&amp;response-expires=473364000.0">
+  <link rel="apple-touch-icon" href="https://instructure-uploads.s3.amazonaws.com/account_120000000081466/attachments/44159819/umdlogo-final-gray.png?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&amp;Expires=1937381306&amp;Signature=MqO2MP0OD%2Flvb1eCu7eril5dHLI%3D&amp;response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&amp;response-expires=473364000.0">
+  <link rel="stylesheet" media="all" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/variables-7dd4b80918af0e0218ec0229e4bd5873.css">
+  <link rel="stylesheet" media="all" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/common-ade423d068.css">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://umd.instructure.com/web-app-manifest/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#990000">
+  <link rel="stylesheet" media="all" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/quizzes-0b759d57f7.css">
+<link rel="stylesheet" media="all" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/learning_outcomes-a9a9fe5d8b.css">
+  <link rel="stylesheet" media="all" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/catalogProd-helpbutton.css">
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          if (!e.defaultPrevented) {
+            e.preventDefault()
+          }
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+
+
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"editorButtons":[{"name":"BOX","id":22347,"favorite":false,"url":"https://www.edu-apps.org/box/","icon_url":"https://www.edu-apps.org/assets/lti_box_engine/icon.png","canvas_icon_class":null,"width":430,"height":200,"use_tray":false,"description":"\u003cp\u003eEmbed files from Box\u003c/p\u003e\n"},{"name":"Panopto Recordings","id":28827,"favorite":true,"url":"https://umd.hosted.panopto.com/Panopto/LTI/LTI.aspx","icon_url":"https://umd.hosted.panopto.com/Panopto/images/panopto_logo_globe.png","canvas_icon_class":null,"width":900,"height":700,"use_tray":false,"description":""},{"name":"Upload/Embed Image","id":30503,"favorite":true,"url":"https://multitool.ciditools.com/cropped/controller.php","icon_url":"https://multitool.ciditools.com/cropped/croppedIcon.png","canvas_icon_class":null,"width":750,"height":600,"use_tray":false,"description":"\u003cp\u003eCrop and upload images to Canvas\u003c/p\u003e\n"},{"name":"Commons Favorites","id":35365,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Choose a reserve item","id":42710,"favorite":false,"url":"https://coursereserves.umd.edu/Ares/WebService/BasicLTI/ContentItemSelectionRequest","icon_url":"https://coursereserves.umd.edu/Ares/WebService/Content/images/Ares_16.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"description":"\u003cp\u003eThis configuration is custom for each Ares institution. Please refer to the Ares documentation for the complete installation instructions.\u003c/p\u003e\n"},{"name":"LibApps Library Content","id":45766,"favorite":false,"url":"https://umd.libapps.com/libapps/lti_launch_manual.php","icon_url":"https://libapps.s3.amazonaws.com/apps/libapps/images/favicon_lti.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"description":"\u003cp\u003eAdd content from LibGuides, E-Reserves, LibCal, and LibAnswers directly into your LMS course pages.\u003c/p\u003e\n"},{"name":"Adobe Creative Cloud Express","id":45771,"favorite":false,"url":"https://classroom.adobe.io/api/lti/redirect","icon_url":"https://spark-cs.adobe.io/images/ccx-logos/16x16.png","canvas_icon_class":null,"width":1010,"height":580,"use_tray":false,"description":"\u003cp\u003eAdobe Inc.\u003c/p\u003e\n"},{"name":"Insert a Wiley Resource","id":54642,"favorite":false,"url":"https://lti.education.wiley.com/wpng/api/v1/lti/resourcediscoverytool","icon_url":"https://education.wiley.com/assets/images/wp.svg","canvas_icon_class":null,"width":1160,"height":660,"use_tray":false,"description":"\u003cp\u003eOutcomes-based learning.\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec963a0a129db782a7e266222f993d1e/variables-7dd4b80918af0e0218ec0229e4bd5873.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec963a0a129db782a7e266222f993d1e/variables-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-a64c7fe33c.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-43e9c545fc.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-43e9c545fc.css"],"current_user_id":"4362814","current_user_global_id":"11330000004362814","current_user_roles":["user","student"],"current_user_is_student":true,"current_user_types":[],"current_user_disabled_inbox":false,"discussions_reporting":true,"files_domain":"cluster47.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":"11330000000081466","k12":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://umd.instructure.com","DEEP_LINKING_LOGGING":null,"comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"release_notes_badge_disabled":false},"FULL_STORY_ENABLED":false,"SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/courses/{course_id}/quizzes/{id}","errors_sample_rate":"0.0005","traces_sample_rate":"0.0005","url_deny_pattern":"instructure-uploads.*amazonaws.com","environment":"Production","revision":"canvas-lms@20220427.213"},"API_GATEWAY_URI":"https://api.us-east-1.instructure.com/graphql/future","DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DIRECT_SHARE_ENABLED":false,"FEATURES":{"featured_help_links":true,"feature_flag_filters":true,"conferencing_in_planner":true,"word_count_in_speed_grader":true,"observer_picker":false,"lti_platform_storage":false,"scale_equation_images":true,"new_equation_editor":true,"buttons_and_icons_cropper":false,"course_paces_blackout_dates":false,"product_tours":false,"files_dnd":true,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"lti_deep_linking_module_index_menu_modal":true,"lti_multiple_assignment_deep_linking":true,"buttons_and_icons_root_account":true,"embedded_release_notes":false,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"4362814","anonymous_id":"2lida","display_name":"Josue Proano","avatar_image_url":"https://umd.instructure.com/images/messages/avatar-50.png","html_url":"https://umd.instructure.com/about/4362814","pronouns":null,"avatar_is_fallback":true},"page_view_update_url":"/page_views/5456c2df-069e-4590-80c1-68fa3daae520?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ1NmMyZGYtMDY5ZS00NTkwLTgwYzEtNjhmYTNkYWFlNTIwIiwidSI6MTEzMzAwMDAwMDQzNjI4MTQsImMiOiIyMDIyLTA1LTA2VDE2OjI0OjQ3LjEwWiJ9.T7DX3ICjMPDUSUX_75xwt9eEMdVC2i6flt9YBbz22X8","context_asset_string":"course_1318188","ping_url":"https://umd.instructure.com/api/v1/courses/1318188/ping","TIMEZONE":"America/New_York","CONTEXT_TIMEZONE":"America/New_York","LOCALES":["en"],"BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSWl3aWNtVm5hVzl1SWpvaWRYTXRaV0Z6ZEMweElpd2laVzUyYVhKdmJtMWxiblFpT2lKUWNtOWtkV04wYVc5dUluMC4uNDZWRTVUTkVaWFExSG9FUS55dC02eUI4WGNkazRDUTJuRjZDbDFyMEJfOVNEVC1WaDFwSEhLbmNIN1Zad21ick5kajJEOF8xX1ZibTNuN25YSTZxX2RuVWliSFpBOE8ya1lRYmtIRjFGUEsyS0l2RVhkbXN2a1A0aS02LXMzT29TU2NpV0NNRnEwRUF6ZFNrQndHTFVtQk9DZUN1bHZQYkJhRHlrMk5ZQjJQaXhKZHQwWDJFMGY2U3Zmd0tMcW5INWkyZnR4MTUwZHhDZ21OOG1iUmp0VlN4U2p0dVlCMWpzRXdiWDQ3OGp1N1N5TlQ4MFlQaVQzblVrYXhJeHJJU2FvQXZlejRMMkRoRlFKSFBORWs0Z3ZxdmdJaVpOTTljRnpXV3FNVXRwZnVBaG9QdWlKUGtIS1hRbzRFYVpMWFZfNklhY0JpWFkydUFNV1l5OENoM3NYSUI1c2R6WXVqaWFUanlSUHprNUhqdnY0SE1DUFhNRUtpejBCOGxnSUdKZjc4a3ZTcXUyX0RtVkVXb0h2VEFKWVpLS290OGhuN0VwYTBGa2ttdThGZ1AzSzQ1WVFXSWRXai1fVkNQd1QzQXdhZzB3SFZFUDgzR0Y3aXBkR0pSdFFPM3BYZjlwYUMtVzRFVUVicS1HTDhvNDdZdVFITEVyRU1jMENsY3hKV3dPZnd0cmZpU3czVXFjR2pTTHIyUm1wWXZzejJBLXpEU3BIb2JQRVo0SjUza3JDMV9BMlBJYi1KVHFfQk9mLVpvNlVZWHFpTUpnV1AwaVdWRzBKQXpjWTl1emx3U1NUSGtJcmJrRnFCNkhCSWNXeDZhanhONGU1bm1nQ1hGS1JtbXRMZ1N6X2hfX3ZfNkRRQldzdl81eW56dGpBd0tpZ1IzNlh3OVlqSHNEV3BJNHozbkxkZlVXekhaSFV0VE5jTnpRX19RbE0yTXFQSzZ2R2xYQmFfR3B6alZMWVdoeExnOThOdGU3bldRak5LOWlDYnNRazBnb1Faa2FiYUp2RTdlRXRmd04tODlMcFZab1c5YmFBaFhjNW14dnE0UUVJVlZGNXZES3laaDJlQWY1Q1hkU1RUb0tOc3V5N0RNLmh3bGthSWFpUi1id05EVnAwNm90V0E=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_CAN_EDIT_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":true,"RICH_CONTENT_INST_RECORD_TAB_DISABLED":false,"SUBMISSION_DOWNLOAD_DIALOG_TITLE":"Download All Quiz File Upload Submissions","UPLOAD_URL":"/api/v1/courses/1318188/quizzes/1511891/submissions/self/files","SUBMISSION_VERSIONS_URL":"https://umd.instructure.com/courses/1318188/quizzes/1511891/submission_versions","QUIZ_SUBMISSION_EVENTS_URL":"https://umd.instructure.com/api/v1/courses/1318188/quizzes/1511891/submissions/16699825/events","ATTACHMENTS":{},"CONTEXT_ACTION_SOURCE":"quizzes","COURSE_ID":"1318188","LOCKDOWN_BROWSER":false,"QUIZ":{"id":"1511891","title":"End of module assessment: Sequence alignment","html_url":"https://umd.instructure.com/courses/1318188/quizzes/1511891","mobile_url":"https://umd.instructure.com/courses/1318188/quizzes/1511891?force_user=1\u0026persist_headless=1","description":"","quiz_type":"assignment","time_limit":15,"timer_autosubmit_disabled":false,"shuffle_answers":true,"show_correct_answers":false,"scoring_policy":"keep_highest","allowed_attempts":1,"one_question_at_a_time":false,"question_count":5,"points_possible":10.0,"cant_go_back":false,"ip_filter":null,"due_at":"2022-03-18T23:00:00-04:00","lock_at":"2022-03-18T23:05:00-04:00","unlock_at":"2022-03-17T12:00:00-04:00","published":true,"locked_for_user":true,"lock_info":{"lock_at":"2022-03-18T23:05:00-04:00","can_view":true,"asset_string":"quizzes:quiz_1511891"},"lock_explanation":"This quiz was locked Mar 18 at 11:05pm.","hide_results":null,"show_correct_answers_at":null,"hide_correct_answers_at":null,"all_dates":[{"due_at":"2022-03-18T23:00:00-04:00","unlock_at":"2022-03-17T12:00:00-04:00","lock_at":"2022-03-18T23:05:00-04:00","base":true}],"can_update":false,"require_lockdown_browser":false,"require_lockdown_browser_for_results":false,"require_lockdown_browser_monitor":false,"lockdown_browser_monitor_data":null,"permissions":{"manage":false,"read":true,"create":false,"update":false,"submit":true,"preview":false,"delete":false,"read_statistics":false,"grade":false,"review_grades":false,"view_answer_audits":false},"quiz_reports_url":"https://umd.instructure.com/api/v1/courses/1318188/quizzes/1511891/reports","quiz_statistics_url":"https://umd.instructure.com/api/v1/courses/1318188/quizzes/1511891/statistics","important_dates":false,"quiz_submission_versions_html_url":"https://umd.instructure.com/courses/1318188/quizzes/1511891/submission_versions","assignment_id":"5956727","one_time_results":false,"assignment_group_id":"2050123","show_correct_answers_last_attempt":false,"version_number":3,"has_access_code":false,"post_to_sis":false,"migration_id":null,"in_paced_course":false},"QUIZ_DETAILS_URL":"https://umd.instructure.com/courses/1318188/quizzes/1511891/managed_quiz_data","QUIZZES_URL":"https://umd.instructure.com/courses/1318188/quizzes","MAX_GROUP_CONVERSATION_SIZE":100,"IS_SURVEY":false,"badge_counts":{"submissions":0},"notices":[],"active_context_tab":"quizzes"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl"],{"10":["8300658022",0,"250b5824c2",2],"15":["fc26aa5fd4",0,"f904416063",2],"19":["df5777ed9c"],"61":["f3934dab06","f405852bb2","ee5810890b","3fd9943b9a"],"64":["6d90a3d213",0,"cace9d4281",2],"67":["8b57f54e71",0,"43833dde85",2],"71":["35b89b103a","4304be7d41","58dbfc2651","2932678b1c"],"06":["4526e0502d",0,"4ca4dedba8",2],"f0":["7c947dce20",0,0,0],"c8":["12d5e4d1e8","9f7b02d283","4ebd280f3e","b547456f4c"],"1e":["7360c722db","d924b1a50e","de7069e18f","b579f0fc1d"],"b3":["8ebc71ebc3","cf8efa05c8","4efdc93a21","fd6d3a9780"],"4f":["0a2c3dcf2f",0,"79668e6396",2],"0c":["c26e82abac",0,"b71e9cbd6d",2],"da":["efb9fe6d7c","edbd1b5e83","a6dc56afb7","dfb2d13098"],"1d":["a3bfcb7961",0,"90682b3bbe",2],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["35936a18c3",0,0,0],"2b":["abf63f48ef","bf8e135ffe","378e0c136b","9833e305e6"],"2c":["6d919206cd",0,0,0],"c2":["6f2721ae01"],"9c":["ecafc938e4",0,"59e7c22304",2],"c5":["ebf0e1382f","7f587d9a8a","afbdabf23d","0d398196a8"],"f2":["51574f9b13"]}]
+;
+  </script>
+
+  <link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/variables-7dd4b80918af0e0218ec0229e4bd5873.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/en_US-80a0ce259b.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/main-e-0b7cf6601d.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec963a0a129db782a7e266222f993d1e/variables-7dd4b80918af0e0218ec0229e4bd5873.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/New_York-c3226761e3.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/New_York-c3226761e3.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js", "https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-e-0b7cf6601d.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/variables-7dd4b80918af0e0218ec0229e4bd5873.js"></script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/New_York-c3226761e3.js"></script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/New_York-c3226761e3.js"></script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/en_US-80a0ce259b.js"></script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/main-e-0b7cf6601d.js"></script><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/0-c-01a38a611c.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/1-c-db599e5793.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/2-c-479fa71934.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/3-c-623dc70b77.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4-c-1fdbd52c5d.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/5-c-96b074fb62.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/6-c-74bb245ec7.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/7-c-8b18744749.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/8-c-c5f6a401eb.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/9-c-a96d96e6bd.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/10-c-9bc1ebed8d.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/11-c-77d301612e.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/12-c-36089dc6ce.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/13-c-b6755d6638.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/15-c-bbd16d24ff.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/14-c-54f4e66a3c.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/16-c-81c6ffebbb.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/17-c-76c1a52bf9.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/18-c-12ed1e778c.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/19-c-d54ef2574a.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/20-c-2e03c7f74e.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/23-c-5a3dc502ae.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/24-c-54413f6d22.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/26-c-fa1688a6c6.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/27-c-35fc1d7739.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/28-c-d7b8ef372a.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/29-c-2643bc0919.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/31-c-e099c8ca51.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/39-c-3187682d5c.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/quiz_show-c-4e00643b54.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/quiz_submission-c-4710e53795.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/115-c-e67fa9fff6.js" as="script" type="text/javascript"><link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/navigation_header-c-1569967c08.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('quiz_show');
+(window.bundles || (window.bundles = [])).push('quiz_submission');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  <title>End of module assessment: Sequence alignment: CMSC423-0101: Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop</title>
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+      ga('set', 'userId', "08381910ff03db6b6dee5c11a2c98b97");
+    ga('set', 'dimension1', "100");
+    ga('set', 'dimension2', "00");
+    ga('set', 'dimension3', "0");
+    ga('set', 'dimension4', "Higher Ed");
+    ga('send', 'pageview');
+    (window.requestIdleCallback || window.setTimeout)(function(){
+      var s=document.createElement('script'), m=document.getElementsByTagName('script')[0]
+      s.async=1; s.src='https://www.google-analytics.com/analytics.js'
+      m.parentNode.insertBefore(s,m)
+    });
+  </script>
+
+
+
+<style type="text/css"></style><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/148-c-af455996a4.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4261-c-47fa7713c9.js"></script><script src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/CanvasRootProdJS-CourseExp.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/2-c-479fa71934.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/45-c-228a3b99a3.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/68-c-ef56a5e986.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4201-c-f5ee7e2f6c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/0-c-01a38a611c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/1-c-db599e5793.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/3-c-623dc70b77.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4-c-1fdbd52c5d.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/5-c-96b074fb62.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/9-c-a96d96e6bd.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/13-c-b6755d6638.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/33-c-f857537fc0.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/36-c-612330e3c9.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/59-c-d65a68883c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/74-c-fe6ec10a6d.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4150-c-aa8dea2883.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/6-c-74bb245ec7.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/7-c-8b18744749.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/8-c-c5f6a401eb.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/10-c-9bc1ebed8d.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/11-c-77d301612e.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/12-c-36089dc6ce.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/15-c-bbd16d24ff.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/14-c-54f4e66a3c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/16-c-81c6ffebbb.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/17-c-76c1a52bf9.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/18-c-12ed1e778c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/19-c-d54ef2574a.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/20-c-2e03c7f74e.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/23-c-5a3dc502ae.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/24-c-54413f6d22.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/26-c-fa1688a6c6.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/27-c-35fc1d7739.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/28-c-d7b8ef372a.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/29-c-2643bc0919.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/31-c-e099c8ca51.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/39-c-3187682d5c.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/quiz_show-c-4e00643b54.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/quiz_submission-c-4710e53795.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/115-c-e67fa9fff6.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/navigation_header-c-1569967c08.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/inst_fs_service_worker-c-6b1c015024.js"></script><link rel="stylesheet" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/messageStudentsDialog-11429f119a.css" data-loaded-by-brandablecss="true"><style type="text/css" data-glamor=""></style><style type="text/css">   i.custom_menu_list_icon:before {       font-size: 27px;       width: 27px;       line-height: 27px;   }   i.custom_menu_list_icon {       width: 27px;       height: 27px;   }   body.primary-nav-expanded .menu-item__text.custom-menu-item__text {       white-space: normal;       padding: 0 2px;   }</style><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 0 }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 0 }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+</style><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/3693-c-4c08bb26c4.js"></script><script charset="utf-8" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/4262-c-be18baad57.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 2001; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+#MathJax_SVG_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_SVG > div {display: inline-block}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_Processing {visibility: hidden; position: absolute; top: 0; left: 0; width: 0; height: 0; overflow: hidden; display: block!important}
+.MathJax_SVG_Processed {display: none!important}
+.MathJax_SVG_test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.MathJax_SVG_test.mjx-test-display {display: table!important}
+.MathJax_SVG_test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.MathJax_SVG_test.mjx-test-default {display: block!important; clear: both}
+.MathJax_SVG_ex_box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.mjx-test-inline .MathJax_SVG_left_box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .MathJax_SVG_right_box {display: inline-block; width: 0; float: right}
+.mjx-test-display .MathJax_SVG_right_box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax_SVG .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="with-left-side course-menu-expanded with-right-side quizzes primary-nav-expanded context-course_1318188 responsive_student_grades_page webkit chrome no-touch"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_SVG_Hidden"><br></br><br></br><br></br></div><svg><defs id="MathJax_SVG_glyphs"><path stroke-width="1" id="MJMATHI-43" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path stroke-width="1" id="MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path stroke-width="1" id="MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path><path stroke-width="1" id="MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path stroke-width="1" id="MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path stroke-width="1" id="MJMATHI-6B" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path stroke-width="1" id="MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path stroke-width="1" id="MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path stroke-width="1" id="MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path stroke-width="1" id="MJMAIN-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path stroke-width="1" id="MJMATHI-62" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path stroke-width="1" id="MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path stroke-width="1" id="MJMAIN-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path stroke-width="1" id="MJMAIN-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path stroke-width="1" id="MJMAIN-67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z"></path></defs></svg></div><div id="MathJax_Message" style="display: none;"></div>
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="false"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+
+<header id="mobile-header" class="no-print">
+  <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-hamburger">
+    <i class="icon-solid icon-hamburger"></i>
+    <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0; top: 12px; height: 12px; right: 6px; display:none;"></span>
+    <span class="screenreader-only">Dashboard</span>
+  </button>
+  <div class="mobile-header-space"></div>
+    <a class="mobile-header-title expandable" href="https://umd.instructure.com/courses/1318188" role="button" aria-controls="mobileContextNavContainer">
+      <div>CMSC423</div>
+        <div>End of module assessment: Sequence alignment</div>
+    </a>
+    <div class="mobile-header-space"></div>
+    <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-arrow" aria-label="Navigation Menu">
+      <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+    </button>
+</header>
+<nav id="mobileContextNavContainer"></nav>
+
+<header id="header" class="ic-app-header no-print ">
+  <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#content" id="skip_navigation_link">Skip To Content</a>
+  <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+      <div class="ic-app-header__logomark-container">
+        <a href="https://umd.instructure.com/" class="ic-app-header__logomark">
+          <span class="screenreader-only">Dashboard</span>
+        </a>
+      </div>
+    <ul id="menu" class="ic-app-header__menu-list">
+        <li class="menu-item ic-app-header__menu-list-item ">
+          <button id="global_nav_profile_link" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container">
+              <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                <img src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/avatar-50.png" alt="Josue Proano">
+              </div>
+              <span class="menu-item__badge"></span>
+            </div>
+            <div class="menu-item__text">
+              Account
+            </div>
+          </button>
+        </li>
+      <li class="ic-app-header__menu-list-item ">
+        <a id="global_nav_dashboard_link" href="https://umd.instructure.com/" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">Dashboard</div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+          <button id="global_nav_courses_link" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+            </div>
+            <div class="menu-item__text">
+              Courses
+            </div>
+          </button>
+        </li>
+        <li class="menu-item ic-app-header__menu-list-item ">
+          <button id="global_nav_groups_link" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--groups" viewBox="0 0 200 135"><path d="M134.5 129.4c0-1.1 0-19.8-6.2-31.1-4.5-8.5-16.4-12.4-35-19.2-1.7-.6-3.4-1.1-5.1-1.7v-8.5c5.6-5.1 8.5-12.4 8.5-20.3V29.4C96.6 13 83.6 0 67.2 0S37.9 13 37.9 29.4v19.2c0 7.3 3.4 14.7 8.5 20.3v8.5c-1.7.6-3.4 1.1-5.1 1.7-18.6 6.2-30.5 10.7-35 19.2C0 109.6 0 128.8 0 129.4c0 3.4 2.3 5.6 5.6 5.6h123.7c3.5 0 5.7-2.3 5.2-5.6zm-123.2-5.7c.6-5.6 1.7-14.7 3.4-19.8C17 98.8 30 94.3 43.5 89.8c2.8-1.1 5.6-2.3 9-3.4 2.3-.6 4-2.8 4-5.1V66.7c0-1.7-.6-3.4-1.7-4.5-4-3.4-6.2-8.5-6.2-13.6V29.4c0-10.2 7.9-18.1 18.1-18.1s18.1 7.9 18.1 18.1v19.2c0 5.1-2.3 10.2-6.2 13.6-1.1 1.1-1.7 2.8-1.7 4.5v14.7c0 2.3 1.7 4.5 4 5.1 2.8 1.1 6.2 2.3 9 3.4 13.6 5.1 26.6 9.6 28.8 14.1 2.8 5.1 4 13.6 4.5 19.8H11.3zM196 79.1c-2.8-6.2-11.3-9.6-22.6-13.6l-1.7-.6v-3.4c4.5-4 6.8-9.6 6.8-15.8V35c0-12.4-9.6-22-22-22s-22 10.2-22 22v10.7c0 6.2 2.3 11.9 6.8 15.8V65l-1.7.6c-7.3 2.8-13 4.5-16.9 7.3-1.7 1.1-2.3 2.8-2.3 5.1.6 1.7 1.7 3.4 3.4 4.5 7.9 4 12.4 7.3 14.1 10.7 2.3 4.5 4 10.2 5.1 18.1.6 2.3 2.8 4.5 5.6 4.5h45.8c3.4 0 5.6-2.8 5.6-5.1 0-3.9 0-24.3-4-31.6zm-42.9 25.4c-1.1-6.8-2.8-12.4-5.1-16.9-1.7-4-5.1-6.8-9.6-10.2 1.7-1.1 3.4-1.7 5.1-2.3l5.6-2.3c1.7-.6 3.4-2.8 3.4-5.1v-9.6c0-1.7-.6-3.4-2.3-4.5-2.8-1.7-4.5-5.1-4.5-8.5V34.5c0-6.2 4.5-10.7 10.7-10.7s10.7 5.1 10.7 10.7v10.7c0 3.4-1.7 6.2-4.5 8.5-1.1 1.1-2.3 2.8-2.3 4.5v10.2c0 2.3 1.1 4.5 3.4 5.1l5.6 2.3c6.8 2.3 15.3 5.6 16.4 7.9 1.7 2.8 2.8 12.4 2.8 20.9h-35.4z"></path></svg>
+
+            </div>
+            <div class="menu-item__text">
+              Groups
+            </div>
+          </button>
+        </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+        <a id="global_nav_calendar_link" href="https://umd.instructure.com/calendar" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Calendar
+          </div>
+        </a>
+      </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+        <a id="global_nav_conversations_link" href="https://umd.instructure.com/conversations" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container">
+            <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Inbox
+          </div>
+        </a><li class="ic-app-header__menu-list-item ">   <a id="global_nav_Portfolium" href="https://umdcp.portfolium.com/" class="ic-app-header__menu-list-link" target="_blank"><div class="menu-item-icon-container" role="presentation"><i class="icon-compose custom_menu_list_icon"></i></div>       <div class="menu-item__text custom-menu-item__text">Portfolium</div>   </a></li>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item">
+          <button id="global_nav_history_link" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg viewBox="0 0 1920 1920" class="ic-icon-svg menu-item__icon svg-icon-history" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+</svg>
+            </div>
+            <div class="menu-item__text">
+              History
+            </div>
+          </button>
+        </li>
+        
+
+
+      <li class="ic-app-header__menu-list-item ">   <a id="global_nav_CourseExp" href="https://umd.instructure.com/users/4362814/external_tools/65163" class="ic-app-header__menu-list-link"><div class="menu-item-icon-container" role="presentation"><i class="icon-syllabus custom_menu_list_icon"></i></div>       <div class="menu-item__text custom-menu-item__text">CourseExp</div>   </a></li><li class="ic-app-header__menu-list-item">
+        <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+          <div class="menu-item-icon-container" role="presentation">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"></path></svg>
+
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Help
+          </div>
+</a>      </li>
+    <li class="ic-app-header__menu-list-item ">   <a id="global_nav_EMT" href="https://emt.umd.edu/" class="ic-app-header__menu-list-link"><div class="menu-item-icon-container" role="presentation"><i class="icon-settings custom_menu_list_icon"></i></div>       <div class="menu-item__text custom-menu-item__text">EMT</div>   </a></li><li class="ic-app-header__menu-list-item ">   <a id="global_nav_Course_Policies" href="https://it.umd.edu/ELMS-policy-menu" class="ic-app-header__menu-list-link" target="_blank"><div class="menu-item-icon-container" role="presentation"><i class="icon-document custom_menu_list_icon"></i></div>       <div class="menu-item__text custom-menu-item__text">Course Policies</div>   </a></li><li class="ic-app-header__menu-list-item ">   <a id="global_nav_Logout" href="https://umd.instructure.com/logout" class="ic-app-header__menu-list-link"><div class="menu-item-icon-container" role="presentation"><i class="icon-off custom_menu_list_icon"></i></div>       <div class="menu-item__text custom-menu-item__text">Logout</div>   </a></li></ul>
+  </div>
+  <div class="ic-app-header__secondary-navigation">
+    <ul class="ic-app-header__menu-list">
+      <li class="menu-item ic-app-header__menu-list-item">
+        <button id="primaryNavToggle" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimize global navigation" title="Minimize global navigation">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div id="global_nav_tray_container"></div>
+  <div id="global_nav_tour"></div>
+</header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+
+        <div class="ic-app-crumbs">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://umd.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My Dashboard">
+  <span class="screenreader-only">My Dashboard</span>
+</i>
+</span></a></li><li><a href="https://umd.instructure.com/courses/1318188"><span class="ellipsible">CMSC423</span></a></li><li><a href="https://umd.instructure.com/courses/1318188/quizzes"><span class="ellipsible">Quizzes</span></a></li><li><a href="https://umd.instructure.com/courses/1318188/quizzes/1511891"><span class="ellipsible">End of module assessment: Sequence alignment</span></a></li></ul></nav>
+        </div>
+
+
+        <div class="right-of-crumbs">
+        </div>
+
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
+          <div id="sticky-container" class="ic-sticky-frame">
+              <span id="section-tabs-header-subtitle" class="ellipsis">Spring 2022</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="https://umd.instructure.com/courses/1318188" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/announcements" class="announcements" tabindex="0">Announcements</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/assignments/syllabus" class="syllabus" tabindex="0">Syllabus</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/outcomes" class="outcomes" tabindex="0">Outcomes</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/assignments" class="assignments" tabindex="0">Assignments</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/quizzes" aria-current="page" class="quizzes active" tabindex="0">Quizzes</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/60343?display=borderless" class="context_external_tool_60343" target="_blank" tabindex="0">Gradescope</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/grades" class="grades" tabindex="0">Grades</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/users" class="people" tabindex="0">People</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/44520" class="context_external_tool_44520" tabindex="0">Namecoach Roster</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/modules" class="modules" tabindex="0">Modules</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/collaborations" class="collaborations" tabindex="0">Collaborations</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/42711" class="context_external_tool_42711" tabindex="0">UMD Piazza</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/discussion_topics" class="discussions" tabindex="0">Discussions</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/44833" class="context_external_tool_44833" tabindex="0">Zoom</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/28827" class="context_external_tool_28827" tabindex="0">Panopto Recordings</a></li><li class="section"><a href="https://umd.instructure.com/courses/1318188/external_tools/45770" class="context_external_tool_45770" tabindex="0">Adobe Creative Cloud</a></li></ul></nav>
+          </div>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+
+
+
+<div id="quiz_show">
+
+  <header class="quiz-header">
+
+
+    <h1 id="quiz_title">
+      End of module assessment: Sequence alignment
+    </h1>
+
+
+    <div class="row-fluid">
+        <div id="quiz_details_wrapper" data-submitted-count=""></div>
+    </div>
+    <div class="row-fluid">
+        
+
+<!--<base target="_top">--><base href="." target="_top">
+<ul id="quiz_student_details">
+  <li>
+    <span class="title">Due</span>
+    <span class="value">
+        <span data-tooltip="" data-html-tooltip-title="Mar 18 at 11pm">
+          Mar 18 at 11pm
+        </span>
+    </span>
+  </li>
+
+  <li style="">
+    <span class="title">Points</span>
+    <span class="value">10</span>
+  </li>
+
+  <li>
+    <span class="title">Questions</span>
+    <span class="value">5</span>
+  </li>
+  
+  <li>
+    <span class="title">Available</span>
+    <span class="value">
+        Mar 17 at 12pm - Mar 18 at 11:05pm
+        <span style="font-size: 0.8em;">1 day</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="title">Time Limit</span>
+    <span class="value">
+        30 Minutes
+    </span>
+  </li>
+
+
+</ul>
+
+
+
+    </div>
+
+
+          <div class="lock_explanation">
+            This quiz was locked Mar 18 at 11:05pm.
+          </div>
+
+    <div id="quiz-submission-version-table" style="height: auto;">
+  <div class="desc">
+    <h3>Attempt History</h3>
+  </div>
+  <table class="ic-Table ic-Table--condensed" summary="A table that shows your quiz attempt history. Each attempt is on the left side. The attempt, time, and score are across the top.">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Attempt</th>
+        <th scope="col">Time</th>
+        <th scope="col">Score</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+        
+<tr class="">
+  <th scope="row" class="ic-Table--header-row">
+      LATEST
+  </th>
+  <td>
+    <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/history?version=1">
+      Attempt 1
+    </a>
+  </td>
+  <td>
+    30 minutes
+  </td>
+
+    <td>
+      7 out of 10
+      
+    </td>
+</tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+  </header>
+
+  <div id="direct-share-mount-point"></div>
+
+    
+  
+<div class="quiz-submission ">
+
+  <div class="alert">
+    <i class="icon-warning" aria-label="Correct answers are hidden."></i>
+    <span>Correct answers are hidden.</span>
+  </div>
+
+<div class="quiz_score" style="">
+    Score for this quiz:
+  <span class="score_value">7</span> out of 10
+  
+    </div>
+<div>
+  Submitted Mar 18 at 5:31pm
+</div>
+<div class="quiz_duration" style="">
+  This attempt took 30 minutes.
+</div>
+<div id="questions" class="assessment_results  suppress_correct_answers">
+  
+<div role="region" aria-label="Question" class="quiz_sortable question_holder " id="" style="" data-group-id="">
+  <div style="display: block; height: 1px; overflow: hidden;">&nbsp;</div>
+  <a name="question_29072233"></a>
+  <div class="display_question question multiple_choice_question     " id="question_29072233">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question 1</span>
+      <span class="question_points_holder" style="">
+        <div class="user_points">
+                2
+          <span class="points question_points"> / 2</span> pts
+        </div>
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/questions/29072233" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">47933578</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Which of the following gap penalty functions represent affine gap penalties (k represents the number of gaps in a row)</textarea>
+      </div>
+      <div id="question_29072233_question_text" class="question_text user_content enhanced">
+          Which of the following gap penalty functions represent affine gap penalties (k represents the number of gaps in a row)
+      </div>
+      <div class="answers">
+                <div class="answers_wrapper">
+                  
+    <div class="answer answer_for_
+         
+         
+         
+         
+         selected_answer unspecified_answer" id="answer_6716" style="" title="No answer text provided.. You selected this answer.">
+
+
+      <span class="hidden id">6716</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-6716" name="question-29072233" type="radio" checked="" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-6716">
+        <div class="answer_text" style="display:none;">No answer text provided.</div>
+        <div class="answer_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="19.157ex" height="2.833ex" viewBox="0 -853 8248.3 1219.7" role="img" focusable="false" style="vertical-align: -0.852ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="3821" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-61" x="4878" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="5629" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-2B" x="6595" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-62" x="7818" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mspace width="mediummathspace"></mspace><mi>k</mi><mspace width="mediummathspace"></mspace><mo>+</mo><mspace width="mediummathspace"></mspace><mi>b</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">Cost\left(k\right)=a\:k\:+\:b</script></span></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 228px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="No answer text provided.">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;">No answer text provided.</div>
+      <div class="answer_match_left_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="19.157ex" height="2.725ex" viewBox="0 -852.5 8248.3 1173.4" role="img" focusable="false" style="vertical-align: -0.745ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="3821" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-61" x="4878" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="5629" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-2B" x="6595" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-62" x="7818" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mspace width="mediummathspace"></mspace><mi>k</mi><mspace width="mediummathspace"></mspace><mo>+</mo><mspace width="mediummathspace"></mspace><mi>b</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">Cost\left(k\right)=a\:k\:+\:b</script></span></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072233</span>
+      <span class="id">6716</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+      <div class="quiz_comment empty">
+        <div class="answer_comment"></div>
+        <div class="answer_comment_html"></div>
+      </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_5978" style="">
+
+
+      <span class="hidden id">5978</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-5978" name="question-29072233" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-5978">
+        <div class="answer_text">No answer text provided.</div>
+        <div class="answer_html"></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 228px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="No answer text provided.">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left">No answer text provided.</div>
+      <div class="answer_match_left_html" style="display:none;"></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072233</span>
+      <span class="id">5978</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_5070" style="">
+
+
+      <span class="hidden id">5070</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-5070" name="question-29072233" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-5070">
+        <div class="answer_text" style="display:none;">No answer text provided.</div>
+        <div class="answer_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-3-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;msup&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.374ex" height="2.974ex" viewBox="0 -913.8 7049.8 1280.5" role="img" focusable="false" style="vertical-align: -0.852ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="4044" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-61" x="5322" y="0"></use><g transform="translate(6074,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="0" y="0"></use><use transform="scale(0.707)" href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-32" x="737" y="513"></use></g></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mspace width="mediummathspace"></mspace><mo>=</mo><mspace width="mediummathspace"></mspace><mi>a</mi><mspace width="mediummathspace"></mspace><msup><mi>k</mi><mn>2</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-3">Cost\left(k\right)\:=\:a\:k^2</script></span></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 228px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="No answer text provided.">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;">No answer text provided.</div>
+      <div class="answer_match_left_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-4-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;msup&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.374ex" height="2.849ex" viewBox="0 -905.6 7049.8 1226.6" role="img" focusable="false" style="vertical-align: -0.745ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="4044" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-61" x="5322" y="0"></use><g transform="translate(6074,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="0" y="0"></use><use transform="scale(0.707)" href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-32" x="737" y="513"></use></g></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mspace width="mediummathspace"></mspace><mo>=</mo><mspace width="mediummathspace"></mspace><mi>a</mi><mspace width="mediummathspace"></mspace><msup><mi>k</mi><mn>2</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-4">Cost\left(k\right)\:=\:a\:k^2</script></span></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072233</span>
+      <span class="id">5070</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_3593" style="">
+
+
+      <span class="hidden id">3593</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-3593" name="question-29072233" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-3593">
+        <div class="answer_text" style="display:none;">No answer text provided.</div>
+        <div class="answer_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-5-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;log&lt;/mi&gt;&lt;mo&gt;&amp;#x2061;&lt;/mo&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="22.193ex" height="2.833ex" viewBox="0 -853 9555.1 1219.7" role="img" focusable="false" style="vertical-align: -0.852ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="3821" y="0"></use><g transform="translate(4878,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-6C"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-6F" x="278" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-67" x="779" y="0"></use></g><g transform="translate(6157,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-2B" x="7902" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-62" x="9125" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mo>=</mo><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mspace width="mediummathspace"></mspace><mo>+</mo><mspace width="mediummathspace"></mspace><mi>b</mi></math></span></span><script type="math/tex" id="MathJax-Element-5">Cost\left(k\right)=\log\left(k\right)\:+\:b</script></span></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 228px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="No answer text provided.">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;">No answer text provided.</div>
+      <div class="answer_match_left_html"><span class="math_equation_latex fade-in-equation" style="null"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-6-Frame" tabindex="0" style="font-size: 100%; display: inline-block; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;log&lt;/mi&gt;&lt;mo&gt;&amp;#x2061;&lt;/mo&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mspace width=&quot;mediummathspace&quot; /&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/math&gt;" role="presentation"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="22.193ex" height="2.725ex" viewBox="0 -852.5 9555.1 1173.4" role="img" focusable="false" style="vertical-align: -0.745ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-43" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6F" x="760" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-73" x="1246" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-74" x="1715" y="0"></use><g transform="translate(2243,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-3D" x="3821" y="0"></use><g transform="translate(4878,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-6C"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-6F" x="278" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-67" x="779" y="0"></use></g><g transform="translate(6157,0)"><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-28" x="0" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-6B" x="389" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-29" x="911" y="0"></use></g><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMAIN-2B" x="7902" y="0"></use><use href="https://umd.instructure.com/courses/1318188/quizzes/1511891#MJMATHI-62" x="9125" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mo>=</mo><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow><mspace width="mediummathspace"></mspace><mo>+</mo><mspace width="mediummathspace"></mspace><mi>b</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">Cost\left(k\right)=\log\left(k\right)\:+\:b</script></span></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072233</span>
+      <span class="id">3593</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+                </div>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+      
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div role="region" aria-label="Question" class="quiz_sortable question_holder " id="" style="" data-group-id="">
+  <div style="display: block; height: 1px; overflow: hidden;">&nbsp;</div>
+  <a name="question_29072237"></a>
+  <div class="display_question question multiple_choice_question     " id="question_29072237">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question 2</span>
+      <span class="question_points_holder" style="">
+        <div class="user_points">
+                2
+          <span class="points question_points"> / 2</span> pts
+        </div>
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/questions/29072237" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">47933591</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">In a local alignment setting, where does backtracking end?</textarea>
+      </div>
+      <div id="question_29072237_question_text" class="question_text user_content enhanced">
+          In a local alignment setting, where does backtracking end?
+      </div>
+      <div class="answers">
+                <div class="answers_wrapper">
+                  
+    <div class="answer answer_for_
+         
+         
+         
+         
+         selected_answer unspecified_answer" id="answer_4529" style="" title="When reaching the value 0 in the matrix. You selected this answer.">
+
+
+      <span class="hidden id">4529</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-4529" name="question-29072237" type="radio" checked="" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-4529">
+        <div class="answer_text">When reaching the value 0 in the matrix</div>
+        <div class="answer_html"></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 370.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="When reaching the value 0 in the matrix">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left">When reaching the value 0 in the matrix</div>
+      <div class="answer_match_left_html" style="display:none;"></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072237</span>
+      <span class="id">4529</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+      <div class="quiz_comment empty">
+        <div class="answer_comment"></div>
+        <div class="answer_comment_html"></div>
+      </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_5358" style="">
+
+
+      <span class="hidden id">5358</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-5358" name="question-29072237" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-5358">
+        <div class="answer_text">When reaching the top left corner of the matrix</div>
+        <div class="answer_html"></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 446.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="When reaching the top left corner of the matrix">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left">When reaching the top left corner of the matrix</div>
+      <div class="answer_match_left_html" style="display:none;"></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072237</span>
+      <span class="id">5358</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_4478" style="">
+
+
+      <span class="hidden id">4478</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-4478" name="question-29072237" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-4478">
+        <div class="answer_text">No answer text provided.</div>
+        <div class="answer_html"></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 228px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="No answer text provided.">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left">No answer text provided.</div>
+      <div class="answer_match_left_html" style="display:none;"></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072237</span>
+      <span class="id">4478</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_1876" style="">
+
+
+      <span class="hidden id">1876</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-1876" name="question-29072237" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-1876">
+        <div class="answer_text">When reaching the top row of the matrix</div>
+        <div class="answer_html"></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 370.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="When reaching the top row of the matrix">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left">When reaching the top row of the matrix</div>
+      <div class="answer_match_left_html" style="display:none;"></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072237</span>
+      <span class="id">1876</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+                </div>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+      
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div role="region" aria-label="Question" class="quiz_sortable question_holder " id="" style="" data-group-id="">
+  <div style="display: block; height: 1px; overflow: hidden;">&nbsp;</div>
+  <a name="question_29072277"></a>
+  <div class="display_question question short_answer_question   incorrect  " id="question_29072277">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2" aria-describedby="user_answer_NaN_arrow"><span class="answer_arrow incorrect" id="user_answer_NaN_arrow" style="left: -108px; top: 5px;">Incorrect</span>Question 3</span>
+      <span class="question_points_holder" style="">
+        <div class="user_points">
+                0
+          <span class="points question_points"> / 2</span> pts
+        </div>
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">short_answer_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/questions/29072277" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">49122678</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;p&gt;&lt;span&gt;Assume you have already computed part of a dynamic programming table (seen below). What is the value in the bottom right corner?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;The match score is 3, the mismatch score is -1, and the gap score is -2.&lt;/span&gt;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 24.4813%; height: 116px;" border="1"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 25%;"&gt;&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;T&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 25%;"&gt;G&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%; text-align: center;"&gt;12&lt;/td&gt;
+&lt;td style="width: 25%; text-align: center;"&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 25%;"&gt;T&lt;/td&gt;
+&lt;td style="width: 25%;"&gt;...&lt;/td&gt;
+&lt;td style="width: 25%; text-align: center;"&gt;11&lt;/td&gt;
+&lt;td style="width: 25%; text-align: center;"&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</textarea>
+      </div>
+      <div id="question_29072277_question_text" class="question_text user_content enhanced">
+          <p><span>Assume you have already computed part of a dynamic programming table (seen below). What is the value in the bottom right corner?</span></p>
+<p><span>The match score is 3, the mismatch score is -1, and the gap score is -2.</span></p>
+<table style="border-collapse: collapse; width: 24.4813%; height: 116px;" border="1">
+<tbody>
+<tr>
+<td style="width: 25%;"></td>
+<td style="width: 25%;">...</td>
+<td style="width: 25%;">T</td>
+<td style="width: 25%;">C</td>
+</tr>
+<tr>
+<td style="width: 25%;">...</td>
+<td style="width: 25%;">...</td>
+<td style="width: 25%;">...</td>
+<td style="width: 25%;">...</td>
+</tr>
+<tr>
+<td style="width: 25%;">G</td>
+<td style="width: 25%;">...</td>
+<td style="width: 25%; text-align: center;">12</td>
+<td style="width: 25%; text-align: center;">11</td>
+</tr>
+<tr>
+<td style="width: 25%;">T</td>
+<td style="width: 25%;">...</td>
+<td style="width: 25%; text-align: center;">11</td>
+<td style="width: 25%; text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="answers">
+              <div>
+                  <div class="answer selected_answer no_answer">
+                    
+<div>
+  <input type="text" name="question_29072277" value="10" class="question_input" autocomplete="off" readonly="&quot;readonly&quot;" aria-label="Fill in the blank answer" style="width: 19px;">
+
+</div>
+
+                  </div>
+              </div>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+      
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div role="region" aria-label="Question" class="quiz_sortable question_holder " id="" style="" data-group-id="">
+  <div style="display: block; height: 1px; overflow: hidden;">&nbsp;</div>
+  <a name="question_29072243"></a>
+  <div class="display_question question multiple_choice_question     " id="question_29072243">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question 4</span>
+      <span class="question_points_holder" style="">
+        <div class="user_points">
+                2
+          <span class="points question_points"> / 2</span> pts
+        </div>
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/questions/29072243" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">47933580</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;p&gt;Given the dynamic programming table below, and the scoring function:&lt;/p&gt;
+&lt;p&gt;score(match) = 10&lt;br&gt;score(mismatch) = -5&lt;br&gt;score(gap) = -2&lt;/p&gt;
+&lt;p&gt;What is the global alignment encoded in the matrix?&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 46.0581%; height: 149px;" border="1"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;A&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;G&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;T&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;0&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-2&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-4&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;G&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-2&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-4&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;8&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;T&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-4&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;18&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;A&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;6&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;4&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;16&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;G&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;-8&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;4&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;16&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;14&lt;/td&gt;
+&lt;td style="width: 16.6667%; text-align: center;"&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</textarea>
+      </div>
+      <div id="question_29072243_question_text" class="question_text user_content enhanced">
+          <p>Given the dynamic programming table below, and the scoring function:</p>
+<p>score(match) = 10<br>score(mismatch) = -5<br>score(gap) = -2</p>
+<p>What is the global alignment encoded in the matrix?</p>
+<table style="border-collapse: collapse; width: 46.0581%; height: 149px;" border="1">
+<tbody>
+<tr>
+<td style="width: 16.6667%; text-align: center;"></td>
+<td style="width: 16.6667%; text-align: center;">-</td>
+<td style="width: 16.6667%; text-align: center;">A</td>
+<td style="width: 16.6667%; text-align: center;">G</td>
+<td style="width: 16.6667%; text-align: center;">T</td>
+<td style="width: 16.6667%; text-align: center;">C</td>
+</tr>
+<tr>
+<td style="width: 16.6667%; text-align: center;">-</td>
+<td style="width: 16.6667%; text-align: center;">0</td>
+<td style="width: 16.6667%; text-align: center;">-2</td>
+<td style="width: 16.6667%; text-align: center;">-4</td>
+<td style="width: 16.6667%; text-align: center;">-6</td>
+<td style="width: 16.6667%; text-align: center;">-8</td>
+</tr>
+<tr>
+<td style="width: 16.6667%; text-align: center;">G</td>
+<td style="width: 16.6667%; text-align: center;">-2</td>
+<td style="width: 16.6667%; text-align: center;">-4</td>
+<td style="width: 16.6667%; text-align: center;">8</td>
+<td style="width: 16.6667%; text-align: center;">6</td>
+<td style="width: 16.6667%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 16.6667%; text-align: center;">T</td>
+<td style="width: 16.6667%; text-align: center;">-4</td>
+<td style="width: 16.6667%; text-align: center;">-6</td>
+<td style="width: 16.6667%; text-align: center;">6</td>
+<td style="width: 16.6667%; text-align: center;">18</td>
+<td style="width: 16.6667%; text-align: center;">16</td>
+</tr>
+<tr>
+<td style="width: 16.6667%; text-align: center;">A</td>
+<td style="width: 16.6667%; text-align: center;">-6</td>
+<td style="width: 16.6667%; text-align: center;">6</td>
+<td style="width: 16.6667%; text-align: center;">4</td>
+<td style="width: 16.6667%; text-align: center;">16</td>
+<td style="width: 16.6667%; text-align: center;">14</td>
+</tr>
+<tr>
+<td style="width: 16.6667%; text-align: center;">G</td>
+<td style="width: 16.6667%; text-align: center;">-8</td>
+<td style="width: 16.6667%; text-align: center;">4</td>
+<td style="width: 16.6667%; text-align: center;">16</td>
+<td style="width: 16.6667%; text-align: center;">14</td>
+<td style="width: 16.6667%; text-align: center;">12</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="answers">
+                <div class="answers_wrapper">
+                  
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_7945" style="">
+
+
+      <span class="hidden id">7945</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-7945" name="question-29072243" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-7945">
+        <div class="answer_text" style="display:none;"></div>
+        <div class="answer_html"><pre>--AGTC<br>GTA-G-</pre></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 104.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;"></div>
+      <div class="answer_match_left_html"><pre>--AGTC<br>GTA-G-</pre></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072243</span>
+      <span class="id">7945</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+          unspecified_answer" id="answer_271" style="">
+
+
+      <span class="hidden id">271</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-271" name="question-29072243" type="radio" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-271">
+        <div class="answer_text" style="display:none;"></div>
+        <div class="answer_html"><pre>AGT-C<br>-GTAG</pre></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 104.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;"></div>
+      <div class="answer_match_left_html"><pre>AGT-C<br>-GTAG</pre></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072243</span>
+      <span class="id">271</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+    <div class="answer answer_for_
+         
+         
+         
+         
+         selected_answer unspecified_answer" id="answer_1678" style="" title=". You selected this answer.">
+
+
+      <span class="hidden id">1678</span>
+
+    <div class="select_answer answer_type">
+        <input id="answer-1678" name="question-29072243" type="radio" checked="" class="question_input" aria-disabled="true" disabled="">&nbsp;
+      <label for="answer-1678">
+        <div class="answer_text" style="display:none;"></div>
+        <div class="answer_html"><pre>AGTC--<br>-GT-AG</pre></div>
+      </label>
+    </div>
+    <div class="answer_type short_answer" style="display:none;">
+      <input name="answer_text" type="text" style="width: 104.5px; margin-bottom: 5px; color: rgb(0, 0, 0);" disabled="true" value="">
+    </div>
+    <div class="answer_match matching_answer answer_type" style="display:none;">
+      <div class="answer_match_left" style="display:none;"></div>
+      <div class="answer_match_left_html"><pre>AGTC--<br>-GT-AG</pre></div>
+      <div class="answer_match_middle">&nbsp;</div>
+      <div class="answer_match_right">
+              
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="display: none;">
+      <span class="numerical_answer_type">exact_answer</span>
+      <span class="blank_id">none</span>
+      <span class="question_id">29072243</span>
+      <span class="id">1678</span>
+      <span class="match_id"></span>
+    </div>
+    <div class="numerical_range_answer answer_type" style="display:none;">
+      <span class="answer_equation"></span>
+      <span class="margin" style="display: none;">
+        margin of error
+        <span style="font-size: 0.8em;">
+          +/-
+        </span>
+        <span class="answer_tolerance"></span>
+      </span>
+    </div>
+      <div class="quiz_comment empty">
+        <div class="answer_comment"></div>
+        <div class="answer_comment_html"></div>
+      </div>
+
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+
+                </div>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+      
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div role="region" aria-label="Question" class="quiz_sortable question_holder " id="" style="" data-group-id="">
+  <div style="display: block; height: 1px; overflow: hidden;">&nbsp;</div>
+  <a name="question_29072281"></a>
+  <div class="display_question question essay_question     " id="question_29072281">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question 5</span>
+      <span class="question_points_holder" style="">
+        <div class="user_points">
+                1
+          <span class="points question_points"> / 2</span> pts
+        </div>
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">essay_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="https://umd.instructure.com/courses/1318188/quizzes/1511891/questions/29072281" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">47933596</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;div id="question_new_question_text" class="question_text user_content enhanced"&gt;
+&lt;p&gt;Describe an algorithm that computes the fitting alignment between two strings S1 and S2.&amp;nbsp; Specifically, we are trying to identify a substring of S1 , such that the alignment between the entirety of S2 and this substring has the largest score over all possible choices of substrings from S1.&lt;/p&gt;
+&lt;p&gt;Please describe your algorithm in terms of how you would modify the local or global alignment algorithms.&amp;nbsp; Specifically, please address the following 4 questions:&lt;/p&gt;
+&lt;p&gt;1. What values will you initialize in the first row and column of the matrix?&lt;/p&gt;
+&lt;p&gt;2. Will you use the local or global variant of the recurrence function (i.e., will you allow free rides or not)?&lt;/p&gt;
+&lt;p&gt;3. Where does backtracking start?&lt;/p&gt;
+&lt;p&gt;4. Where does backtracking end?&lt;/p&gt;
+&lt;/div&gt;</textarea>
+      </div>
+      <div id="question_29072281_question_text" class="question_text user_content enhanced">
+          <div id="question_new_question_text" class="question_text user_content enhanced">
+<p>Describe an algorithm that computes the fitting alignment between two strings S1 and S2.&nbsp; Specifically, we are trying to identify a substring of S1 , such that the alignment between the entirety of S2 and this substring has the largest score over all possible choices of substrings from S1.</p>
+<p>Please describe your algorithm in terms of how you would modify the local or global alignment algorithms.&nbsp; Specifically, please address the following 4 questions:</p>
+<p>1. What values will you initialize in the first row and column of the matrix?</p>
+<p>2. Will you use the local or global variant of the recurrence function (i.e., will you allow free rides or not)?</p>
+<p>3. Where does backtracking start?</p>
+<p>4. Where does backtracking end?</p>
+</div>
+      </div>
+      <div class="answers">
+              <div>
+                  Your Answer:
+                  <div class="user_content quiz_response_text enhanced"><p>1. in the first row we would initialize with 0 and first column we would have gap penalties of 1&nbsp;</p>
+<p>2. There would be no free rides&nbsp;</p>
+<p>3. backtracking still starts at the top right corner of the matrix&nbsp;</p>
+<p>4. backtrack ends at returns at the highest score found.&nbsp;</p>
+<p>&nbsp;</p>
+<p>You would have to calculate the score penalties just like we did for global alignment except that the penalty is only 1. and follow the path until the highest score is found using recurrence equations.&nbsp;</p></div>
+              </div>
+                <div class="answers_wrapper">
+                  
+                </div>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+      
+        <div class="quiz_comment">
+            backtracking cannot start from top right.
+        </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+</div>
+  <div id="update_scores">
+
+
+<div class="quiz_score" style="text-align: right; font-size: 1.2em; ">
+    Quiz Score:
+  <span class="score_value">7</span> out of 10
+</div>
+</div> <!-- #speed_update_scores || #update_scores -->
+</div>
+
+
+
+
+  <div id="assignment_external_tools"><div></div></div>
+
+  <div id="module_sequence_footer"><div class="module-sequence-padding"></div>
+<div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+  <div class="module-sequence-footer-content">
+    
+      <span class="module-sequence-footer-button--previous" data-tooltip="right" data-html-tooltip-title="&lt;i class=&#39;icon-paperclip&#39;&gt;&lt;/i&gt; Intro to dynamic programming.pdf">
+          <a href="https://umd.instructure.com/courses/1318188/modules/items/11257527" role="button" class="Button" aria-describedby="msf0-previous-desc" aria-label="Previous Module Item">
+            <i class="icon-mini-arrow-left"></i>Previous
+            <span id="msf0-previous-desc" class="hidden" hidden="">Previous: Intro to dynamic programming.pdf</span>
+          </a>
+      </span>
+    
+
+    
+      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="&lt;strong style=&#39;float:left&#39;&gt;Next Module:&lt;/strong&gt; &lt;br&gt; Chapter 4: Proteomics - Peptide Sequencing">
+        <a href="https://umd.instructure.com/courses/1318188/modules/items/11003026" role="button" class="Button" aria-describedby="msf0-next-desc" aria-label="Next Module Item">
+          Next<i class="icon-mini-arrow-right"></i>
+          <span id="msf0-next-desc" class="hidden" hidden="">Next Module: Chapter 4: Proteomics - Peptide Sequencing</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+</div>
+
+</div>
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary"><div style="font-size:12px;text-align:center"><a href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><button type="button" id="help-link" class="Button button-sidebar-wide " style="background-color:#900;color:white;width:240px">&nbsp;24/7 Canvas Chat Support</button></a><br>....or call 1-833-566-3347 (staff/faculty)<br>1-877-399-4090 (students)</div>
+          <aside id="right-side" role="complementary">
+                <div id="sidebar_content" class="rs-margin-bottom">
+      <ul class="page-action-list" style="display:none;">
+        <h2>Related Items</h2>
+
+
+
+      </ul>
+    </div>
+
+        
+  <div>
+    <div style="border-bottom: 1px solid #888; font-size: 1.1em; font-weight: bold;">
+        Submission Details:
+    </div>
+    <div>
+    <table class="summary" style="font-size: 1.1em;">
+      <tbody>
+        <tr>
+          <th>Time:</th>
+          <td>30 minutes</td>
+        </tr>
+        <tr style="">
+          <th>Current Score:</th>
+          <td>7 out of 10
+                  </td>
+        </tr>
+        <tr style="">
+          <th>Kept Score:</th>
+          <td>7 out of 10</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+
+          </aside>
+        <div class="al-dropdown_container" id="umd-howtouse"><a class="al-trigger Button Button--block" role="button" href="https://umd.instructure.com/courses/1318188/quizzes/1511891#" style="background: #f7f7f7; color: #000000; text-align:left;"> How to use UMD Canvas<i class="icon-mini-arrow-down"></i></a><ul class="al-options" role="menu" tabindex="0" aria-hidden="true" aria-expanded="false"><li><a href="https://umd.instructure.com/courses/1157772" target="_blank" tabindex="-1" role="menuitem" class="icon-user">Student Tutorial</a></li><li><a href="https://umd.instructure.com/courses/1253803" target="_blank" class="icon-user" tabindex="-1" role="menuitem">Faculty Tutorial</a></li><li><a href="https://community.canvaslms.com/community/answers/guides/" target="_blank" tabindex="-1" role="menuitem" class="icon-document">Canvas Guides</a></li></ul></div><br><div id="umd-bookstore"><a class="al-trigger Button Button--block" role="button" href="https://umcp.bncollege.com/course-material/course-finder" style="background: #f7f7f7; color: #000000; text-align:center; margin-bottom:10px; white-space: normal;" target="_blank">Textbooks</a></div><div id="umd-bookstore"><a class="al-trigger Button Button--block" role="button" href="https://aip.bncollege.com/app/courselist/" style="background: #f7f7f7; color: #000000; text-align:center;white-space: normal;" target="_blank">Adopt Textbook</a></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">5456c2df-069e-4590-80c1-68fa3daae520</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+  
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<link rel="preload" href="./End of module assessment_ Sequence alignment_ CMSC423-0101_ Bioinformatic Algorithms, Databases, and Tools-Spring 2022 mpop_files/inst_fs_service_worker-c-6b1c015024.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script>
+//<![CDATA[
+
+      ;["https://instructure-uploads.s3.amazonaws.com/account_11330000000081466/attachments/66509144/CanvasRootProdJS-CourseExp.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+</div> <!-- #application -->
+
+
+<div class="tinymce-a11y-checker-container"></div><div id="nav-tray-portal" style="position: relative; z-index: 99;"></div></body></html>
